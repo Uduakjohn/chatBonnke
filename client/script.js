@@ -85,7 +85,7 @@ const handleSubmit = async (e) => {
     apiKey:"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"
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
-    const response = await fetch(' http://localhost:5000', {
+    const response = await fetch('https://chatbonnke.onrender.com', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json', 
