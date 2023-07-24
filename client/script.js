@@ -82,14 +82,13 @@ const handleSubmit = async (e) => {
 
     // specific message div 
     const messageDiv = document.getElementById(uniqueId)
-
+    apiKey:"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"
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
-
-    const response = await fetch('https://codex-im0y.onrender.com/', {
+    const response = await fetch(' http://localhost:5000', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json',
+            'Content-Type': 'application/json', 
         },
         body: JSON.stringify({
             prompt: data.get('prompt')
